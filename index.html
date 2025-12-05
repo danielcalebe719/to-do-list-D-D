@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>To-do List D&D</h1>
+    <div class="top-bar">
+        <button id="btnAdd" class="btn-primary">+ Nova Tarefa</button>
+
+        <select id="filterSelect" class="filter-select">
+            <option value="all">Todas</option>
+            <option value="completa">Concluídas</option>
+            <option value="pendende">Pendentes</option>
+        </select>
+    </div>
+
+    <div id="formContainer" class="form hidden">
+        <input id="tarefasTitle" type="text" placeholder="Título da tarefa">
+        <textarea id="tarefasDesc" placeholder="Descrição"></textarea>
+        <p id="errorMsg"></p>
+        <button id="saveTarefasBtn" class="btn-primary">Salvar</button>
+    </div>
+    <div id="tarefasGrid" class="tarefas-grid"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
